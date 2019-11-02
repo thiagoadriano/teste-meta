@@ -8,7 +8,8 @@
   },
   "scripts": {
     "preinstall": "npm install -g yarn",
-    "test": "./node_modules/.bin/mocha './test/*.spec.js'"
+    "test": "./node_modules/.bin/mocha './test/*.spec.js'",
+    "test:watch": "yarn test -- --watch"
   },
   "repository": {
     "type": "git",
