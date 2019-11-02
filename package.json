@@ -1,0 +1,33 @@
+{
+  "name": "teste-meta",
+  "version": "1.0.0",
+  "description": "Esse repo guarda as resoluções para as questões apresentadas no arquivo **[QUESTIONS](QUESTIONS.md)**.\r Na pasta **src** contém as soluções. \r Na pasta **test** contém os testes unitários para as soluções.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "preinstall": "npm install -g yarn",
+    "test": "./node_modules/.bin/mocha './test/*.spec.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagoadriano/teste-meta.git"
+  },
+  "keywords": [
+    "meta",
+    "teste",
+    "algoritimo",
+    "solução"
+  ],
+  "author": "Thiago Adriano<thiago.s.adriano@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagoadriano/teste-meta/issues"
+  },
+  "homepage": "https://github.com/thiagoadriano/teste-meta#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
+}
