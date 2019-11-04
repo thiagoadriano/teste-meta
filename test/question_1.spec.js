@@ -16,6 +16,7 @@ describe('Questão 1 - validações', () => {
     expect(question(3, [])).to.false;
     expect(question(3, null)).to.false;
     expect(question(3, 'valor')).to.false;
+    expect(question(3, [1, 13, '50', 8])).to.false;
   });
 });
 
@@ -34,7 +35,7 @@ describe('Questão 1 - teste valores', () => {
   });
 
   it('Deve garantir um array com os indices 2,3, 6,7 e 10,11 para o alvo 15', () => {
-    let ints = [0,'15', 5,10, 8,25, 14,1, 25,30, 7,8];
+    let ints = [0, 8, 5,10, 8,25, 14,1, 25,30, 7,8];
     let alvo = 15;
     expect(question(alvo, ints)).eql([2,3, 6,7, 10,11]);
   });

@@ -15,7 +15,7 @@ describe('Questão 3 - validações', () => {
   });
 });
 
-describe('Questão 3 - valores', () => {
+describe('Questão 3 - teste valores', () => {
   it('Deve garantir a venda para [7,1,5,3,6,4] com lucro 5', () => {
     let result = question([7,1,5,3,6,4]);
     expect(result).to.include(5);

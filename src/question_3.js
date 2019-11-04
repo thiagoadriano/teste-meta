@@ -1,6 +1,9 @@
 function isValidList(list) {
-  let invalid = list.some(x => typeof x !== 'number');
-  return Array.isArray(list) && list.length && !invalid;
+  if (Array.isArray(list)) {
+    let invalid = list.some(x => !Number.isInteger(x));
+    return list.length && !invalid;
+  }
+  return false;
 }
 
 function seachValues(list) {

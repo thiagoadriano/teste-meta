@@ -1,9 +1,13 @@
 function isValidAlvo(alvo) {
-  return !Number.isNaN(alvo) && alvo > 0;
+  return Number.isInteger(alvo) && alvo > 0;
 }
 
 function isValidList(list) {
-  return Array.isArray(list) && list.length;
+  if (Array.isArray(list)) {
+    let invalid = list.some(x => !Number.isInteger(x));
+    return list.length && !invalid;
+  }
+  return false;
 }
 
 function calculate(alvo, list) {
@@ -12,7 +16,7 @@ function calculate(alvo, list) {
 
   for (let i = 0; i < total; i++) {
     let calc = list[i] + list[i + 1];
-    if (!Number.isNaN(calc) && calc === alvo) {
+    if (calc === alvo) {
       indices.push(i, i + 1);
     }
   }
