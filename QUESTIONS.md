@@ -75,20 +75,20 @@ Esses registros são salvos na base de dados no seguinte formato:
 
 ```json
 [
-  { data: '2019-10-01', hora: '08:01', funcionario: 'João' },
-  { data: '2019-10-01', hora: '07:56', funcionario: 'Maria' },
-  { data: '2019-10-01', hora: '12:02', funcionario: 'João' },
-  { data: '2019-10-01', hora: '12:01', funcionario: 'Maria' },
-  { data: '2019-10-01', hora: '13:01', funcionario: 'João' },
-  { data: '2019-10-01', hora: '12:59', funcionario: 'Maria' },
-  { data: '2019-10-01', hora: '18:02', funcionario: 'João' },
-  { data: '2019-10-01', hora: '17:58', funcionario: 'Maria' },
-  { data: '2019-10-02', hora: '08:09', funcionario: 'João' },
-  { data: '2019-10-02', hora: '12:01', funcionario: 'João' },
-  { data: '2019-10-02', hora: '12:54', funcionario: 'João' },
-  { data: '2019-10-02', hora: '12:58', funcionario: 'Maria' },
-  { data: '2019-10-02', hora: '18:02', funcionario: 'João' },
-  { data: '2019-10-02', hora: '18:30', funcionario: 'Maria' }
+  { "data": "2019-10-01", "hora": "08:01", "funcionario": "João" },
+  { "data": "2019-10-01", "hora": "07:56", "funcionario": "Maria" },
+  { "data": "2019-10-01", "hora": "12:02", "funcionario": "João" },
+  { "data": "2019-10-01", "hora": "12:01", "funcionario": "Maria" },
+  { "data": "2019-10-01", "hora": "13:01", "funcionario": "João" },
+  { "data": "2019-10-01", "hora": "12:59", "funcionario": "Maria" },
+  { "data": "2019-10-01", "hora": "18:02", "funcionario": "João" },
+  { "data": "2019-10-01", "hora": "17:58", "funcionario": "Maria" },
+  { "data": "2019-10-02", "hora": "08:09", "funcionario": "João" },
+  { "data": "2019-10-02", "hora": "12:01", "funcionario": "João" },
+  { "data": "2019-10-02", "hora": "12:54", "funcionario": "João" },
+  { "data": "2019-10-02", "hora": "12:58", "funcionario": "Maria" },
+  { "data": "2019-10-02", "hora": "18:02", "funcionario": "João" },
+  { "data": "2019-10-02", "hora": "18:30", "funcionario": "Maria" }
 ]
 ```
 
@@ -98,9 +98,9 @@ funcionário e depois por data. O retorno deve possuir o seguinte formato:
 
 ```json
 [
-  { funcionario: 'Maria', data: '2019-10-01', total: '09:04' },
-  { funcionario: 'Maria', data: '2019-10-02', total: '05:32' },
-  { funcionario: 'João', data: '2019-10-01', total: '09:02' },
-  { funcionario: 'João', data: '2019-10-02', total: '09:00' }
+  { "funcionario": "Maria", "data": "2019-10-01", "total": "09:04" },
+  { "funcionario": "Maria", "data": "2019-10-02", "total": "05:32" },
+  { "funcionario": "João", "data": "2019-10-01", "total": "09:02" },
+  { "funcionario": "João", "data": "2019-10-02", "total": "09:00" }
 ]
 ```
